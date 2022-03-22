@@ -3,11 +3,11 @@
 library(shiny)
 
 fluidPage(
-    titlePanel("Adverse Events Query to OpenFDA", windowTitle = "Adverse Events Query to OpenFDA"),
+    titlePanel("Adverse Events Query to OpenFDA phils new title", windowTitle = "Adverse Events Query to OpenFDA"),
     fluidRow(
         column(3,
             br(),
-            p("The OpenFDA project makes adverse-event data gathered after January 1, 2004,
+            p("The OpenFDA project makes adverse-event data gathered after January 1st, 2004,
               available via a public-access portal that enables developers to quickly and
               easily use it in applications. The project is hosted at:"),
             a(href="https://open.fda.gov/", "open.fda.gov"),
@@ -15,7 +15,7 @@ fluidPage(
             br(),
             p("This web-app provides a user-friendly graphical interface to the openFDA web-server"),
             br(),
-            p("To explore the adverse event data between two dates:"),
+            p("To explore, please the adverse event data between two dates:"),
             textInput("api", "1) Enter the name of drug:", "asdsdsd"),
             dateInput('start_date', '2) Enter the start date:', min = '2004-01-01', value = '2004-01-01'),
             dateInput('end_date', '3) Enter the end date:', min = '2004-01-02'),
